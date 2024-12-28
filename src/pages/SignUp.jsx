@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from "../images/logo.png"
+import logo from "../images/logo1.png"
 import { Link, useNavigate } from 'react-router-dom';
 import image from "../images/authPageSide.png";
 import { api_base_url } from '../helper';
@@ -43,7 +43,7 @@ const SignUp = () => {
     <>
       <div className="container w-screen min-h-screen flex items-center justify-between pl-[100px]">
         <div className="left w-[35%]">
-          <img className='w-[200px]' src={logo} alt="" />
+          <img className='w-[300px]' src={logo} alt="" />
           <form onSubmit={submitForm} className='w-full mt-[60px]' action="">
             <div className="inputBox">
               <input required onChange={(e)=>{setUsername(e.target.value)}} value={username} type="text" placeholder='Username'/>
